@@ -9,6 +9,8 @@ class AppColors {
   static const Color dividerColor = Color(0xffD7D7D7);
   static const Color blueColor = Color(0xff443FBD);
   static const Color borderCardColor = Color((0x0F919191));
+  static const Color gradientStartColor = Color(0xFF443FBD);
+  static const Color gradientEndColor = Color(0xffFD0193);
   static const LinearGradient followButtonGradient = LinearGradient(
     colors: [Color(0xFF443FBD), Color(0xffFD0193)],
   );

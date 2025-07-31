@@ -10,6 +10,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
+        height: preferredSize.height,
         padding: const EdgeInsets.symmetric(horizontal: 16),
         decoration: const BoxDecoration(
           color: Colors.white,
@@ -25,10 +26,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             // Appbar Logo
-            SvgPicture.asset(
-              'assets/icons/appbar_logo.svg',
-              height: 32,
-            ),
+            SvgPicture.asset('assets/icons/appbar_logo.svg'),
 
             // Notification & Menu Icons
             Row(
@@ -37,20 +35,14 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
                   onTap: () {
                     // Handle notification tap
                   },
-                  child: SvgPicture.asset(
-                    'assets/icons/notificaton.svg',
-                    height: 24,
-                  ),
+                  child: SvgPicture.asset('assets/icons/notification.svg'),
                 ),
                 const SizedBox(width: 16),
                 GestureDetector(
                   onTap: () {
                     // Handle menu tap
                   },
-                  child: SvgPicture.asset(
-                    'assets/icons/menu.svg',
-                    height: 24,
-                  ),
+                  child: SvgPicture.asset('assets/icons/menu.svg'),
                 ),
               ],
             ),
@@ -61,5 +53,5 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(70); // Customize height
+  Size get preferredSize => const Size.fromHeight(60); // Customize height
 }
