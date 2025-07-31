@@ -35,7 +35,7 @@ class _LoginViewState extends State<LoginView> {
                 focusNode: loginVM.emailFocusNode.value,
                 validator: (value) {
                   if (value!.isEmpty) {
-                    return Utils.toastMassage("email_required".tr);
+                 //   return Utils.toastMassage("email_required".tr);
                   } else {
                     return null;
                   }
@@ -64,9 +64,9 @@ class _LoginViewState extends State<LoginView> {
                 focusNode: loginVM.passwordFocusNode.value,
                 validator: (value) {
                   if (value!.isEmpty) {
-                    return Utils.toastMassage("password_required".tr);
+                  //  return Utils.toastMassage("password_required".tr);
                   } else if (value.length < 6) {
-                    return Utils.toastMassage("password_lenght".tr);
+                 //   return Utils.toastMassage("password_lenght".tr);
                   }
                   return null;
                 },

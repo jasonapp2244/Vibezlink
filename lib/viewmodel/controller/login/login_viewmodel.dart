@@ -38,12 +38,12 @@ class LoginViewmodel extends GetxController {
                   print(error.toString());
                 }
               });
-          Utils.toastMassage("Login Successfully");
+          //      Utils.toastMassage("Login Successfully");
         })
         .onError((error, stackTrace) {
           loading.value = false;
 
-          Utils.toastMassage(error.toString());
+          //     Utils.toastMassage(error.toString());
         });
   }
 }
