@@ -1,4 +1,4 @@
-package com.example.getxmvvm
+package com.craft.vibezlink
 
 import io.flutter.embedding.android.FlutterActivity
 
