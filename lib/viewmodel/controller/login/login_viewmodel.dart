@@ -31,7 +31,7 @@ class LoginViewmodel extends GetxController {
           usersPrefrence
               .saveUser(UserModel.fromJson(value))
               .then((value) {
-                Get.toNamed(RoutesName.homeview);
+                // Get.toNamed(RoutesName.homeview);
               })
               .onError((error, stackTrace) {
                 if (kDebugMode) {

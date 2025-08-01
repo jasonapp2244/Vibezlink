@@ -23,7 +23,7 @@ class _HomeViewState extends State<HomeView> {
             icon: Icon(Icons.logout),
             onPressed: () {
               usersPrefrence.removeUser().then((value) {
-                Get.toNamed(RoutesName.loginview);
+                // Get.toNamed(RoutesName.loginview);
               }
               );
             },
