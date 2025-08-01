@@ -49,7 +49,7 @@ class GernernalExceptionState extends State<GernernalException> {
               child: Text(
                 "Retry",
                 style: TextStyle(
-                  color: AppColors.secconderyColor,
+                  color: AppColors.textColor,
                   fontWeight: FontWeight.bold,
                 ),
               ),

@@ -62,7 +62,7 @@ class CustomProfileCard extends StatelessWidget {
             style: TextStyle(
               fontSize: 12.sp,
               fontWeight: FontWeight.bold,
-              color: AppColors.primaryColor,
+              color: AppColors.textColor,
             ),
             textAlign: TextAlign.center,
           ),
