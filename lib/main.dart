@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getxmvvm/resources/getx_localization/language.dart';
-import 'package:getxmvvm/resources/routes/routes.dart';
+import 'package:getxmvvm/view/login_view.dart';
+import 'package:getxmvvm/view/profile_setup_view.dart';
+import 'package:getxmvvm/view/role_selector.dart';
 import 'package:getxmvvm/view/splash_view.dart';
 void main() {
   runApp(MyApp());
@@ -19,10 +21,10 @@ class MyApp extends StatelessWidget {
       locale: Locale('en','US'),
       fallbackLocale: Locale('en','US'),
       home: SplashView(),
-      getPages: 
-      AppRoutes.appRoutes()
+      // getPages: 
+      // AppRoutes.appRoutes()
 
-      ,
+      
     );
   }
 }
